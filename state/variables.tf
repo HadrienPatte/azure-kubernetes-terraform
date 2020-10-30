@@ -1,4 +1,5 @@
 variable name {
+  # The name used for the Storage Account needs to be globally unique.
   type        = string
   description = "Name of the container where terraform state will be stored."
 }

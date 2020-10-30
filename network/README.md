@@ -1,4 +1,4 @@
-# network
+# Network
 
 This terraform module manages the network the kubernetes cluster will rely on.
 
