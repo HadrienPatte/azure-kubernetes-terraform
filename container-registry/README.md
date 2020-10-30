@@ -5,4 +5,4 @@ This terraform module manages the container registry the kubernetes cluster will
 ## Dependencies
 
 Apply the following modules first:
-* `state`
+* [`state`](../state)
