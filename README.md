@@ -16,3 +16,8 @@ terraform apply
 ```
 
 You will be prompted for confirmation to apply.
+
+To get the kubeconfig to interact with the cluster, from the `kubernetes` directory, run:
+```sh
+terraform output kube_config >> kubeconfig.yaml
+```

@@ -12,7 +12,6 @@ variable name {
     condition     = length(var.name) > 4
     error_message = "\"name\" cannot be less than 5 characters."
   }
-
 }
 
 variable location {
