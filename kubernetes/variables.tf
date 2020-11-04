@@ -30,12 +30,12 @@ variable authorized_ip_ranges {
 
 variable vm_size {
   type        = string
-  description = "The size of the Virtual Machines of the default node pool. Available values can be found on https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-sizes-specs"
+  description = "The size of the Virtual Machines of the default Node Pool. Available values can be found on https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-sizes-specs"
 }
 
 variable min_count {
   type        = number
-  description = "The minimum number of nodes which should exist in this Node Pool."
+  description = "The minimum number of nodes which should exist in the default Node Pool."
 
   validation {
     condition     = var.min_count > 0 && var.min_count < 101
@@ -45,7 +45,7 @@ variable min_count {
 
 variable max_count {
   type        = number
-  description = "The maximum number of nodes which should exist in this Node Pool."
+  description = "The maximum number of nodes which should exist in the default Node Pool."
 
   validation {
     condition     = var.max_count > 0 && var.max_count < 101
