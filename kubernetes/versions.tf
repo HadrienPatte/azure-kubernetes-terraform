@@ -9,6 +9,5 @@ terraform {
       source  = "hashicorp/tls"
       version = "=3.0.0"
     }
-
   }
 }

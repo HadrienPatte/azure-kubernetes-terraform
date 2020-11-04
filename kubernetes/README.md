@@ -1,4 +1,4 @@
-# Container Registry
+# Azure Kubernetes Service
 
 This terraform module manages the AKS cluster.
 
