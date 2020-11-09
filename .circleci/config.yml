@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  format:
+    docker:
+      - image: quay.io/hadrienpatte/terraform
+    steps:
+      - checkout
+      - run: fmt -recursive -check
+
+workflows:
+  lint:
+    jobs:
+      - format
