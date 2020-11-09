@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   format:
     docker:
-      - image: quay.io/hadrienpatte/terraform
+      - image: quay.io/hadrienpatte/terraform:0.13.5
     steps:
       - checkout
       - run: fmt -recursive -check
