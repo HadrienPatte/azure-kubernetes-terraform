@@ -53,6 +53,16 @@ variable max_count {
   }
 }
 
+variable container_registry_name {
+  type        = string
+  description = "Name of the container registry."
+}
+
+variable container_registry_resource_group {
+  type        = string
+  description = "Name of the container registry resource group."
+}
+
 variable tags {
   type        = map(string)
   description = "Tags"
